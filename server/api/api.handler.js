@@ -357,6 +357,8 @@ const settleBets = async function (req, h) {
     // get all transaction of the round
     const txnsAll = await Transaction.findByRoundId(txnsInfor.roundId);
     const txnsVoid = txnsAll.filter((txn) => txn.trans_action === ACTION.VOID);
+    const txnsUnsettled = txnsAll.filter((txn) => txn.trans_action === ACTION.UNSETTLED);
+
     const txnsCancel = txnsAll.filter(
       (txn) => txn.trans_action === ACTION.REFUND
     );
