@@ -1,0 +1,36 @@
+{
+    "app": {
+      "port": "8080",
+      "name": "amb-i8",
+      "logLevel": "debug",
+      "gameId": "67"
+    },
+    "auth": {
+      "secretKey": "linexgaming_key"
+    },
+    "db": {
+      "host": "db-test.cluster-cbdenfc40osw.ap-southeast-1.rds.amazonaws.com",
+      "user": "admin",
+      "password": "q1w2e3r4t5Q!",
+      "database": "db_game_dev",
+      "timezone": "+0000"
+    },
+    "dbRead": {
+      "host": "db-test.cluster-cbdenfc40osw.ap-southeast-1.rds.amazonaws.com",
+      "user": "admin",
+      "password": "q1w2e3r4t5Q!",
+      "database": "db_game_dev",
+      "timezone": "+0000"
+    },
+    "table": {
+      "agent": "agent",
+      "commission": "commission"
+    },
+    "api": {
+      "url": "https://test.ambsuperapi.com",
+      "username": "linexbet",
+      "apiKey": "2de72ead-ff4f-41f2-a884-b251c194f167",
+      "productId": "KAGAME",
+      "currency": "THB"
+    }
+  }
